@@ -1,0 +1,29 @@
+{
+  "name": "local",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Quang-PC <nnduyquang@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gijgo": "^1.9.6",
+    "font-awesome": "^5.0.12",
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.1.1",
+    "nivo-slider": "*",
+    "fancybox": "^3.3.5",
+    "admin-lte": "2.4.3",
+    "countUp.js": "^1.9.3",
+    "waypoints": "4.0.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

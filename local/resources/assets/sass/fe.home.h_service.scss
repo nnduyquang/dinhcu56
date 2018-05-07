@@ -1,0 +1,27 @@
+#h_service {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 5px;
+  .one-service {
+    background-color: #eee;
+    padding: 52px 10px 40px;
+    img.img-service {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+      height: 62px;
+    }
+    .card-body {
+      .card-title {
+        text-align: center;
+        padding: 20px 0 20px 0;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .card-text {
+        line-height: 1.5;
+        padding: 0 5px 0 20px;
+      }
+    }
+  }
+}

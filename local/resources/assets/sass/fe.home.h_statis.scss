@@ -1,0 +1,41 @@
+#h_statis {
+  margin-top: 40px;
+  background: url(../images/temps/home/counter_bg4a11.jpg) center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  //overflow: hidden;
+  background-attachment: fixed;
+  padding: 75px;
+  .one-item {
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    z-index: 1;
+    h2.title {
+      margin-bottom: 10px;
+
+    }
+    .count-statis {
+      font-size: 30px;
+    }
+  }
+  &:after {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #h_statis {
+    padding: 60px;
+    .one-item {
+      margin-bottom: 20px;
+    }
+  }
+}

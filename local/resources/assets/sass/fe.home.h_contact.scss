@@ -1,0 +1,40 @@
+#h_contact {
+  .contact-around {
+    background-color: $main-color;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+    h4.title {
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+    .description {
+      line-height: 1.5;
+    }
+    a {
+      display: inline-block;
+      color: white;
+      padding: 10px;
+      border: 1px solid white;
+      margin-top: 20px;
+      transition: 0.2s all;
+    }
+
+    a:hover {
+      background-color: $sub-color;
+
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #h_contact {
+    text-align: center;
+    .contact-around {
+      img.img-contact {
+        margin-top: 20px;
+      }
+    }
+  }
+}

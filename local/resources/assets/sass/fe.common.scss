@@ -1,0 +1,39 @@
+.cm_title{
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    color: $main-color;
+    font-weight: bold;
+    font-size: 25px;
+    display: inline-block;
+    &:before{
+      position: absolute;
+      left: -148px;
+      top: 50%;
+      margin-top: -1px;
+      height: 2px;
+      width: 108px;
+      border-top: 2px solid $main-color;
+      content: "";
+    }
+    &:after{
+      position: absolute;
+      right: -148px;
+      top: 50%;
+      margin-top: -1px;
+      height: 2px;
+      width: 108px;
+      content: "";
+      border-top: 2px solid $main-color;
+    }
+}
+@media (max-width: 767px) {
+  .cm_title{
+    &:before,&:after{
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 140%;
+    }
+  }
+}

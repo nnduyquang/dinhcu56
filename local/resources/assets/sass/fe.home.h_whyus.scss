@@ -1,0 +1,38 @@
+#h_whyus {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  #detail{
+    margin-top: 40px;
+    img.img-whyus-right {
+      //background-image: url(../images/temps/home/whyus937d.jpg);
+      //background-size: 100% 100%;
+      //background-position: center center;
+      //overflow: hidden;
+    }
+    ul.list-li{
+      padding-left: 20px;
+      list-style: none;
+      li{
+        line-height: 2;
+        font-size: 22px;
+        font-weight: bold;
+        i{
+          color: $main-color;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  #h_whyus {
+    #detail {
+      .img-whyus-right {
+        height: 300px;
+      }
+      ul.list-li{
+        padding: 0;
+      }
+    }
+  }
+}

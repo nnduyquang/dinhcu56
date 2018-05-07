@@ -1,0 +1,47 @@
+#h_news {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  #detail {
+    .one-item {
+      margin-top: 40px;
+      position: relative;
+      transition: all 0.2s;
+      .img-news {
+        overflow: hidden;
+        img.h_news_img {
+          height: 222px;
+          transition: all 0.2s;
+          &:hover{
+            transform: scale(1.2, 1.2);
+          }
+        }
+      }
+      h4.title-product {
+        height: 70px;
+        a {
+          color: $main-color;
+
+        }
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        margin: 15px auto 0;
+        letter-spacing: .1px;
+        width: 100%;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+      .description {
+        line-height: 1.5;
+      }
+    }
+  }
+}
