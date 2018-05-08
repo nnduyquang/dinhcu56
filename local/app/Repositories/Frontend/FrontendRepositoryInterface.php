@@ -37,4 +37,6 @@ interface FrontendRepositoryInterface
     public function getAllPostByCategoryMain($path);
 
     public function getFrontendHomepage();
+
+    public function getCategoryMobileByPath($path);
 }

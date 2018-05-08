@@ -86,6 +86,11 @@ class FrontendController extends Controller
         return view('frontend.home.index', compact('data'));
     }
 
+    public function getCategoryMobileByPath($path){
+        $data = $this->frontendRepository->getCategoryMobileByPath($path);
+        return view('frontend.common.menu.m-category', compact('data'));
+    }
+
 
 
 }

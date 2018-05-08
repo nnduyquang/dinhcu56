@@ -11,6 +11,7 @@ Route::post('/sendmail/send', ['as' => 'mail.send', 'uses' => 'MailController@se
 Route::get('/admin/sml_login', 'AuthController@checklogin');
 Route::post('sml_login', 'AuthController@login')->name('login');
 Route::get('/admin/sml_logout', 'AuthController@logout')->name('logout');
+Route::get('/category/{path}','FrontendController@getCategoryMobileByPath');
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('sml_admin/dashboard', function () {

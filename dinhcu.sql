@@ -2,10 +2,10 @@
 -- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 07, 2018 at 04:50 PM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 5.6.35
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th5 08, 2018 lúc 12:17 PM
+-- Phiên bản máy phục vụ: 10.1.31-MariaDB
+-- Phiên bản PHP: 5.6.35
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dinhcu`
+-- Cơ sở dữ liệu: `dinhcu`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category_items`
+-- Cấu trúc bảng cho bảng `category_items`
 --
 
 CREATE TABLE `category_items` (
@@ -48,7 +48,7 @@ CREATE TABLE `category_items` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `category_items`
+-- Đang đổ dữ liệu cho bảng `category_items`
 --
 
 INSERT INTO `category_items` (`id`, `name`, `path`, `description`, `image`, `image_mobile`, `level`, `parent_id`, `type`, `seo_title`, `seo_description`, `seo_keywords`, `order`, `isActive`, `created_at`, `updated_at`) VALUES
@@ -73,7 +73,7 @@ INSERT INTO `category_items` (`id`, `name`, `path`, `description`, `image`, `ima
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category_permissions`
+-- Cấu trúc bảng cho bảng `category_permissions`
 --
 
 CREATE TABLE `category_permissions` (
@@ -84,7 +84,7 @@ CREATE TABLE `category_permissions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `category_permissions`
+-- Đang đổ dữ liệu cho bảng `category_permissions`
 --
 
 INSERT INTO `category_permissions` (`id`, `name`, `created_at`, `updated_at`) VALUES
@@ -98,7 +98,7 @@ INSERT INTO `category_permissions` (`id`, `name`, `created_at`, `updated_at`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `configs`
+-- Cấu trúc bảng cho bảng `configs`
 --
 
 CREATE TABLE `configs` (
@@ -113,7 +113,7 @@ CREATE TABLE `configs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `configs`
+-- Đang đổ dữ liệu cho bảng `configs`
 --
 
 INSERT INTO `configs` (`id`, `name`, `content`, `description`, `order`, `user_id`, `created_at`, `updated_at`) VALUES
@@ -129,7 +129,7 @@ INSERT INTO `configs` (`id`, `name`, `content`, `description`, `order`, `user_id
 -- --------------------------------------------------------
 
 --
--- Table structure for table `menus`
+-- Cấu trúc bảng cho bảng `menus`
 --
 
 CREATE TABLE `menus` (
@@ -149,7 +149,7 @@ CREATE TABLE `menus` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
+-- Cấu trúc bảng cho bảng `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -161,7 +161,7 @@ CREATE TABLE `migrations` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `password_resets`
+-- Cấu trúc bảng cho bảng `password_resets`
 --
 
 CREATE TABLE `password_resets` (
@@ -173,7 +173,7 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `permissions`
+-- Cấu trúc bảng cho bảng `permissions`
 --
 
 CREATE TABLE `permissions` (
@@ -187,7 +187,7 @@ CREATE TABLE `permissions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `permissions`
+-- Đang đổ dữ liệu cho bảng `permissions`
 --
 
 INSERT INTO `permissions` (`id`, `name`, `display_name`, `description`, `category_permission_id`, `created_at`, `updated_at`) VALUES
@@ -219,7 +219,7 @@ INSERT INTO `permissions` (`id`, `name`, `display_name`, `description`, `categor
 -- --------------------------------------------------------
 
 --
--- Table structure for table `permission_role`
+-- Cấu trúc bảng cho bảng `permission_role`
 --
 
 CREATE TABLE `permission_role` (
@@ -228,7 +228,7 @@ CREATE TABLE `permission_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `permission_role`
+-- Đang đổ dữ liệu cho bảng `permission_role`
 --
 
 INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
@@ -260,7 +260,7 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `posts`
+-- Cấu trúc bảng cho bảng `posts`
 --
 
 CREATE TABLE `posts` (
@@ -282,7 +282,7 @@ CREATE TABLE `posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `posts`
+-- Đang đổ dữ liệu cho bảng `posts`
 --
 
 INSERT INTO `posts` (`id`, `title`, `path`, `description`, `content`, `image`, `seo_title`, `seo_description`, `seo_keywords`, `post_type`, `isActive`, `category_item_id`, `user_id`, `created_at`, `updated_at`) VALUES
@@ -296,13 +296,13 @@ INSERT INTO `posts` (`id`, `title`, `path`, `description`, `content`, `image`, `
 (8, 'Khách hàng có quốc tịch Mỹ báo sanh lãnh sự cho con tại Việt Nam', 'khach-hang-co-quoc-tich-my-bao-sanh-lanh-su-cho-con-tai-viet-nam', '<p style=\"margin-bottom:.0001pt; margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:normal\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:24.0pt\"><span style=\"color:#444340\">Khách hàng có quốc tịch Mỹ/báo sanh lãnh sự cho con tại Việt&nbsp;Nam</span></span></span></span></span></span>\r\n</p>', '<h2 style=\"margin-top:0in; margin:2pt 0in 0.0001pt\">\r\n	<span style=\"font-size:18px;\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span style=\"line-height:107%\"><span calibri=\"\" light=\"\" style=\"font-family:\"><span style=\"color:#2e74b5\"><span style=\"font-weight:normal\"><b><span style=\"line-height:107%\"><span style=\"color:#444340\">Định Cư Mỹ &ndash; Chúc mừng khách hàng của Top Ten chị Thu và anh Tommy đã có quốc tịch Mỹ thành công cho con tại Việt Nam ( hay còn gọi là&nbsp;<span inherit=\"\" style=\"border:none windowtext 1.0pt; font-family:\"><span style=\"color:#15b6b8\">giấy báo sanh lãnh sự</span></span>).</span></span></b></span></span></span></span></span></span></span>\r\n</h2>\r\n\r\n<p>\r\n	<img alt=\"\" src=\"http://localhost:8080/dinhcu56/images/uploads/images/tintuc/5.png\" style=\"width: 100%; height: 100%;\">\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">GỌI NGAY</span></span></span></strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">&nbsp;cho các Chuyên viên bảo lãnh Mỹ ngay để có thể hỗ trợ quí vị làm hồ sơ nhập quốc tịch Mỹ cho con của công dân Mỹ sinh tại Việt Nam và các hồ sơ bảo lãnh gia đình định cư khác:&nbsp;</span></span></span><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">Ms Hân 0901 330 014</span></span></span></strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">,&nbsp;</span></span></span><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">Mr Brady Pham: 0901 226 286</span></span></span></strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">,&nbsp;</span></span></span><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">Ms Thảo 0949 705 599</span></span></span></strong></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Hoặc, liên hệ trực tiếp&nbsp;</span></span></span><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">Top Ten Immigration</span></span></span></strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">:&nbsp;</span></span></span><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">02 Giải Phóng, Phường 4, Quận Tân Bình, Tp Hồ Chí Minh</span></span></span></strong></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Email:&nbsp;</span></span></span><a href=\"mailto:account@toptenimmigration.com.vn\" style=\"color:blue; text-decoration:underline\"><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#15b6b8\">account@toptenimmigration.com.vn</span></span></span></a></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\"><span style=\"background-color:null;\">Website:&nbsp;</span></span></span></span><a href=\"http://www.tuvandinhcu.com.vn\" style=\"color:blue; text-decoration:underline\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"background-color:null;\">www.tuvandinhcu.com.vn</span></span></span></a></span></span></span></span>\r\n</p>', 'images/uploads/images/gt_1.jpg', 'Quốc tịch mỹ cho con tại Việt Nam', 'Quốc tịch mỹ cho con tại Việt Nam', 'quốc tịch mỹ cho con tại việt nam, hộ chiếu mỹ cho con tại việt nam', 1, 1, 12, 1, '2018-05-05 01:27:16', '2018-05-07 14:31:35');
 INSERT INTO `posts` (`id`, `title`, `path`, `description`, `content`, `image`, `seo_title`, `seo_description`, `seo_keywords`, `post_type`, `isActive`, `category_item_id`, `user_id`, `created_at`, `updated_at`) VALUES
 (9, 'Luật nhập quốc tịch Úc: Sinh con ở Úc có được nhập quốc tịch cho con?', 'luat-nhap-quoc-tich-ec-sinh-con-o-ec-co-duoc-nhap-quoc-tich-cho-con', '<p style=\"margin-bottom:3.75pt; margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"background:white\"><span style=\"line-height:normal\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:22.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#868688\">Luật nhập quốc tịch Úc: Sinh con ở Úc có được nhập quốc tịch cho con?</span></span></span></span></span></span></span>\r\n</p>', '<h2 style=\"margin-top:0in; margin-right:0in; margin-bottom:3.75pt; margin-left:0in\">\r\n	<span style=\"font-size:18pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-weight:bold\"><span style=\"font-size:22.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#868688\"><span style=\"font-weight:normal\">Định cư Úc &ndash; Sinh con tại Úc được quyền lợi gì? Tìm hiểu điều kiện để con bạn sinh ra có thể nhập quốc tịch Úc.</span></span></span></span></span></span></span></span>\r\n</h2>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Cùng&nbsp;<strong><span arial=\"\" style=\"font-family:\"><span style=\"color:#e3b93f\">Quốc tịch Úc</span>&nbsp;</span></strong>tìm hiểu luật sinh con ở Úc cho những ai đang chuẩn bị sinh con tại Úc để biết&nbsp;có những quy định như thế nào nhé:</span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin: 0in 0in 11.25pt; text-align: center;\">\r\n	<img alt=\"\" src=\"http://localhost:8080/dinhcu56/images/uploads/images/tintuc/4.png\" style=\"width: 70%; height: 70%;\">\r\n</p>\r\n\r\n<h3 style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:13.5pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-weight:bold\"><strong><span style=\"font-size:19.0pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#868688\"><span style=\"font-weight:normal\">Khi du học sinh sinh con ở Úc được quyền lợi gì?</span></span></span></span></strong></span></span></span></span>\r\n</h3>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Trong trường hợp bạn mang thai, điều kiện sức khỏe không cho phép mình tiếp tục các khóa học, các bạn có thể nộp đơn xin tạm hoãn khóa học của mình (Leave of Absence).</span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Bạn có thể vẫn ở lại Úc hoặc về nước trong thời gian Leave of Absence. Và do có thời gian tạm hoãn này nên chắc chắn là bạn sẽ mất nhiều thời gian hơn để hoàn thành khóa học so với kế hoạch ban đầu và buộc lòng phải gia hạn visa du học của mình.</span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Nếu các bạn mang thai, không cần nghỉ hẳn một khoảng thời gian dài như vậy thì không cần phải nộp đơn xin Leave of Absence. Tuy vậy, có thể là trong một vài trường hợp, bạn không khỏe và không thể hoàn thành được các bài kiểm tra đúng hạn hoặc là không thể tham gia buổi thi nào đó theo lịch của nhà trường thì bạn hoàn toàn có thể nộp đơn xin tạm hoãn, và tất nhiên là bạn cũng cần giấy tờ chứng minh về tình trạng sức khỏe của mình.</span></span></span></span></span></span>\r\n</p>\r\n\r\n<h3 style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:13.5pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-weight:bold\"><strong><span style=\"font-size:19.0pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#868688\"><span style=\"font-weight:normal\">Luật sinh con ở Úc</span></span></span></span></strong></span></span></span></span>\r\n</h3>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Theo quy&nbsp;định&nbsp;của luật pháp Việt Nam,<strong><span arial=\"\" style=\"font-family:\">&nbsp;nếu cả&nbsp;</span></strong><em><b><span arial=\"\" style=\"font-family:\">cha và mẹ mang quốc tịch Việt Nam thì khi sinh con ra ở Úc đã đương nhiên mang quốc tịch Việt Nam</span></b></em>. Con bạn sẽ được đăng kí khai sinh tại cơ quan đại diện Việt Nam ở nước ngoài, được cấp hộ chiếu VN, được miễn thị thực khi nhập xuất cảnh Việt Nam và sau này khi về Việt Nam được hưởng quyền và có nghĩa vụ như mọi công dân Việt Nam khác theo qui định của Luật pháp VN.</span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin: 0in 0in 11.25pt; text-align: center;\">\r\n	<img alt=\"\" src=\"http://localhost:8080/dinhcu56/images/uploads/images/tintuc/3.png\" style=\"width: 70%; height: 70%;\">\r\n</p>\r\n\r\n<p class=\"MsoCaption\" style=\"margin: 0in 0in 10pt; text-align: center;\">\r\n	<span style=\"font-size:9pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"color:#44546a\"><span style=\"font-style:italic\">Figure 1Theo điều 12(1)(b), đứa bé có thể được trở thành công dân Úc vào lần sinh nhật thứ 10 của mình</span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Sinh con tại Úc có được nhập quốc tịch</span></span></span></strong><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">&nbsp;Úc? Trẻ em sinh ra tại Úc&nbsp;sau ngày 20/08/1986 không tự động được quốc tịch Úc. Căn cứ theo điều 12(1)(a) của Luật Quốc Tịch (Úc) nêu rằng nếu ai đó sinh ra tại Úc và cha/mẹ của người đó là quốc tịch/thường trú thì sẽ được quốc tịch kể từ khi chào đời.</span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Nếu cả bố và mẹ đều giữ visa tạm trú thì em bé cũng sẽ chỉ có visa tạm trú, và subclass trùng với subclass của bố mẹ. Đặc biệt,&nbsp;<strong><span arial=\"\" style=\"font-family:\">Theo điều 12(1)(b) của Luật nhập quốc tịch Úc mà quý vị cần lưu ý: đứa bé có thể được trở thành công dân Úc vào lần sinh nhật thứ 10 của mình nếu như trong khoảng 10 năm đó&nbsp;đứa bé sinh sống chủ yếu tại Úc</span></strong>.</span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Trong trường hợp người cha không chịu ký thì thủ tục này sẽ được thực hiện với sự hỗ trợ qua bộ phận bảo vệ quyền lợi trẻ em, Child Support Agency hoặc Toà Án Gia Đình căn cứ theo điều 69W của Luật Gia Đình (Úc) bắt buộc người cha xét nghiệm DNA.</span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Với&nbsp;những thông tin trên đây mong rằng bạn đã biết rõ câu trả lời&nbsp;sinh con ở Úc có được nhập quốc tịch cho con hay không.</span></span></span></span></span></span>\r\n</p>\r\n\r\n<p align=\"right\" style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in; text-align:right\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Thảo Trần</span></span></span></em></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\">&nbsp;</span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Theo dõi&nbsp;<strong><i><span arial=\"\" style=\"font-family:\">chuyên trang Quoctichuc</span></i></strong>&nbsp;để cập nhật các thông tin và&nbsp;<strong><span arial=\"\" style=\"font-family:\">luật</span></strong>&nbsp;liên quan đến&nbsp;<strong><span arial=\"\" style=\"font-family:\">Quốc tịch Úc mới nhất từ Lãnh sự quán Úc</span></strong>&nbsp;cũng như&nbsp;<strong><span arial=\"\" style=\"font-family:\">Bộ Di Trú Úc</span></strong></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Hoặc,&nbsp;<strong><span arial=\"\" style=\"font-family:\">HÃY GỌI NGAY CHO CÁC CHUYÊN VIÊN Quốc tịch Úc</span></strong>&nbsp;để được tư vấn và hỗ trợ chi tiết khi có kế hoạch làm hồ sơ quốc tịch Úc cho con:&nbsp;<strong><span arial=\"\" style=\"font-family:\">Ms Hân 0901 330 014, Mr Brady Pham 0901 226 286, Ms Thảo 0949 705 599</span></strong></span></span></span></span></span></span>\r\n</p>\r\n\r\n<h3 style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:13.5pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-weight:bold\"><span style=\"font-size:19.0pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#868688\"><span style=\"font-weight:normal\">Văn phòng Công Ty Top Ten Immigration: 02 Giải Phóng, Phường 4, Quận Tân Bình, Tp Hồ Chí Minh</span></span></span></span></span></span></span></span>\r\n</h3>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Email:&nbsp;</span></span></span><a href=\"mailto:Account@toptenimmigration.com.vn\" style=\"color:blue; text-decoration:underline\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#e3b93f\">Account@toptenimmigration.com.vn</span></span></span></a></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:11.25pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#16161a\">Website:&nbsp;</span></span></span><a href=\"http://www.tuvandinhcu.com.vn\" style=\"color:blue; text-decoration:underline\"><span style=\"font-size:10.5pt\"><span arial=\"\" style=\"font-family:\">www.tuvandinhcu.com.vn</span></span></a></span></span></span>\r\n</p>', 'images/uploads/images/gt_1.jpg', 'Luật nhập quốc tịch Úc: Sinh con ở Úc có được nhập quốc tịch cho con?', 'Luật nhập quốc tịch Úc: Sinh con ở Úc có được nhập quốc tịch cho con?', 'Quốc Tịch Úc', 1, 1, 13, 1, '2018-05-05 01:30:53', '2018-05-07 14:31:17'),
-(10, 'Visa vợ chồng Mỹ & khi nào nhận thẻ xanh 2 năm', 'visa-vo-chong-my-khi-nao-nhan-the-xanh-2-nam', '<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Top Ten Định Cư: &nbsp;Visa bảo lãnh vợ chồng Mỹ và thẻ xanh 2 năm thì thời gian kết hôn được tính khi nào? Thời điểm nhận thẻ xanh được tính từ thời điểm nào? bảo lãnh vợ chồng Mỹ khi nào nhận thẻ xanh 10 năm?</span></span></span></span></span></strong></span></span></span>\r\n</p>', '<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Top Ten Định Cư: &nbsp;Visa bảo lãnh vợ chồng Mỹ và thẻ xanh 2 năm thì thời gian kết hôn được tính khi nào? Thời điểm nhận thẻ xanh được tính từ thời điểm nào? bảo lãnh vợ chồng Mỹ khi nào nhận thẻ xanh 10 năm?</span></span></span></span></span></strong></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\"><img alt=\"\" src=\"http://localhost:8080/dinhcu56/images/uploads/images/tintuc/6.png\" style=\"width: 100%; height: 100%;\"></span></span></span></span></span></strong></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Đối với các diện visa vợ chồng Mỹ, thẻ xanh được cấp căn cứ dựa trên tổng thời gian kết hôn của hai vợ chồng</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Nếu người bảo lãnh và đương đơn vợ chồng Mỹ kết hôn dưới 2 năm, thì được cấp thẻ xanh 2 năm</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Và nếu người bảo lãnh và đương đơn vợ chồng Mỹ kết hôn trên 2 năm thì khi đương đơn vợ chồng của công dân Mỹ hoặc thường trú nhân đến Mỹ sẽ được cấp thẻ xanh 10 năm</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Thời gian kết hôn tính từ khi công dân Mỹ hoặc thường trú nhân và đương đơn vợ chồng ở Việt Nam chính thức đăng ký kết hôn ( trường hợp nếu cả hai không đăng ký kết hôn, mà chỉ đám cưới hoặc đám hỏi, thì không được tính là ngày kết hôn chính thức theo quy định của luật pháp. Cả hai phải mở visa hôn phu hôn thê đi Mỹ).</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Và thời điểm để Chính phủ Mỹ cấp thẻ xanh 2 năm căn cứ vào thời gian tính từ thời điểm cả hai kết hôn hợp thức hóa cho đến thời điểm đương đơn vợ chồng của người bảo lãnh đến phi trường (hoặc cửa khẩu biên giới đương bộ) làm thủ tục nhập cảnh Mỹ</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Một số quý vị ngộ nhận rằng thẻ xanh được cấp vào thời điểm phỏng vấn, điều này hoàn toàn không chính xác.</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Liên hệ Top Ten Định Cư Mỹ để được hỗ trợ&nbsp;dịch vụ hồ sơ visa bảo lãnh thân nhân định cư Mỹ&nbsp;: Công dân Hoa Kỳ bảo lãnh anh chị em, Con là công dân Mỹ bảo lãnh cha mẹ ở Việt Nam (ngược lại), visa vợ chồng Mỹ, visa hôn phu thê Mỹ, thương trú nhân bảo lãnh vợ chồng và con độc thân:</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><b><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">Top Ten Immigration</span></span></span></b></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">02 Giải Phóng, Phường 4, Tân Bình, Hồ Chí Minh</span></span></span></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Website:&nbsp;</span></span></span><a href=\"http://www.tuvandinhcu.com.vn\" style=\"color:blue; text-decoration:underline\"><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\">www.tuvandinhcu.com.vn</span></span></a></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Facebook:&nbsp;</span></span></span><a href=\"https://www.facebook.com/chuyenbaolanhmy/\" style=\"color:blue; text-decoration:underline\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\">https://www.facebook.com/chuyenbaolanhmy/</span></span></a></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><b><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">Hotline: Mr. Thuận 0901 226 286 &ndash; Ms. Hân&nbsp;0901 330 014 &ndash; Ms Thảo 0949 705 599</span></span></span></b></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in 0in 8pt\">\r\n	&nbsp;\r\n</p>', 'images/uploads/images/gt_1.jpg', 'Visa vợ chồng Mỹ & khi nào nhận thẻ xanh 2 năm', 'Visa vợ chồng Mỹ & khi nào nhận thẻ xanh 2 năm', 'vợ chồng mỹ', 1, 1, 2, 1, '2018-05-05 01:36:17', '2018-05-07 14:30:53'),
-(11, 'Mẹ có hồ sơ bảo lãnh Úc theo diện kết hôn vợ chồng 309, con có được đi cùng hồ sơ?', 'me-co-ho-so-bao-lanh-ec-theo-dien-ket-hon-vo-chong-309-con-co-duoc-di-cung-ho-so', '<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"font-size:13.5pt\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Top Ten Định cư Úc &ndash; Chuyên visa vợ chồng Úc: Mẹ có hồ sơ bảo lãnh Úc theo diện kết hôn vợ chồng Úc, hồ sơ 309, trường hợp người mẹ trước đó có con riêng ở Việt Nam vậy con có được đi theo hồ sơ bảo lãnh kết hôn của mẹ hay không? Nếu được thì con đang đi du học Mỹ thì có cần&nbsp;về Việt Nam làm giấy tờ không, và cần cung cấp bổ sung những giấy tờ gì cùng hồ sơ để con có thể đi cùng?</span></span></span></span></span></strong></span></span></span>\r\n</p>', '<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"font-size:13.5pt\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Top Ten Định cư Úc &ndash; Chuyên visa vợ chồng Úc: Mẹ có hồ sơ bảo lãnh Úc theo diện kết hôn vợ chồng Úc, hồ sơ 309, trường hợp người mẹ trước đó có con riêng ở Việt Nam vậy con có được đi theo hồ sơ bảo lãnh kết hôn của mẹ hay không? Nếu được thì con đang đi du học Mỹ thì có cần&nbsp;về Việt Nam làm giấy tờ không, và cần cung cấp bổ sung những giấy tờ gì cùng hồ sơ để con có thể đi cùng?</span></span></span></span></span></strong></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"font-size:13.5pt\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\"><img alt=\"\" src=\"http://localhost:8080/dinhcu56/images/uploads/images/tintuc/7.png\" style=\"width: 100%; height: 100%;\"></span></span></span></span></span></strong></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in 0in 8pt\">\r\n	&nbsp;\r\n</p>\r\n\r\n<p style=\"margin-bottom:.25in; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Trong trường hợp người mẹ ở Việt Nam kết hôn với người có PR thẻ xanh hoặc công dân Úc và được bảo lãnh sang Úc theo diện kết hôn vợ chồng thì được quyền&nbsp;bảo lãnh con sang Úc nếu người con đó đáp ứng được các điều kiện như sau:</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.25in; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">1. Nếu con dưới 18 tuổi thì cần có giấy xác nhận đồng ý cho con đi định cư Úc cùng mẹ của cha ruột của người con đó.</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.25in; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">2. Nếu con trên 18 tuổi thì phải chứng minh được rằng người con đó vẫn đang phụ thuộc vào mẹ về tài chính.</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.25in; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Những giấy tờ cần thiết của người con nộp cùng hồ sơ để người con có thể đi cùng với mẹ đối với hồ sơ bảo lãnh kết hôn vợ chồng Úc gồm: các giấy tờ cá nhân của người con xin đi cùng hồ sơ bảo lãnh kết hôn vợ chồng của mẹ, các bằng chứng chứng minh chứng minh người con vẫn đang phụ thuộc vào mẹ về tài chính, ví dụ: các hóa đơn và biên nhận người mẹ gửi tiền cho con, COE khóa học và các&nbsp;forms phải điền.</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.25in; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Trong trường hợp người con phụ thuộc xin đi cùng hồ sơ bảo lãnh vợ chồng đi Úc của người mẹ đang không có cư trú ở Việt Nam mà ví dụ đang học tại Mỹ thì người con phụ thuộc đó có thể trực tiếp đi từ Mỹ đến Úc mà không cần phải về Việt Nam&nbsp; khi hồ sơ bảo lãnh được chấp thuận</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Chúng tôi sẽ giúp bạn hệ thống sắp xếp hồ sơ visa Úc và các bằng chứng thuyết phục viên chức Lãnh sự Úc cũng như hệ thống trọn bộ&nbsp;</span></span></span></em><strong><i><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">câu hỏi huấn luyện phỏng vấn định cư Úc</span></span></span></i></strong><em><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">.&nbsp;</span></span></span></em><strong><i><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Top Ten Định Cư Úc</span></span></span></i></strong><em><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">&nbsp;là dịch vụ chuyên&nbsp;</span></span></span></em><strong><i><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">hỗ trợ hồ sơ bảo lãnh visa đồng giới Úc, visa hôn phu hôn thê &ndash; Visa vợ chồng Úc</span></span></span></i></strong><em><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">&nbsp;với nhiều năm kinh nghiệm các hồ sơ khó cũng như xin cứu xét, khiếu nại các trường hợp Lãnh sự nghi ngờ tính chất chân thật trong mối quan hệ giữa người bảo lãnh và đương đơn visa Úc&hellip;v..v&hellip;Để biết thêm thông tin chi tiết về visa bảo lãnh vợ chồng Úc, visa hôn phu hôn thê Úc, bảo lãnh đồng giới Úc và các diện visa Úc khác: visa du lịch Úc kết hợp thăm thân nhân, &nbsp;liên hệ Top Ten Định Cư Úc để được tư vấn miễn phí:</span></span></span></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><b><span style=\"font-size:13.5pt\"><span cambria=\"\" math=\"\" style=\"font-family:\"><span style=\"color:red\">&rArr;</span></span></span></b></em><em><b><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:red\">&nbsp;TOP TEN IMMIGRATION&nbsp;</span></span></span></b></em><em><b><span style=\"font-size:13.5pt\"><span cambria=\"\" math=\"\" style=\"font-family:\"><span style=\"color:red\">&lArr;</span></span></span></b></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">02 Giải Phóng, Phường 4, Tân Bình, Hồ Chí Minh</span></span></span></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Website</span></span></span></strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">:&nbsp;</span></span></span><a href=\"http://www.tuvandinhcu.com.vn\" style=\"color:blue; text-decoration:underline\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\">www.tuvandinhcu.com.vn</span></span></a></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Facebook</span></span></span></strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">:&nbsp;</span></span></span><a href=\"https://www.facebook.com/visavochonguc/\" style=\"color:blue; text-decoration:underline\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#ca2017\">www.facebook.com/visavochonguc</span></span></span></a></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><b><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:red\">Hotline: Mr. Thuận 0901 226 286 &ndash; Ms Thảo: 0949 705 599 &ndash;&nbsp; Ms. Hân&nbsp;090 133 0014</span></span></span></b></em></span></span></span></span>\r\n</p>', 'images/uploads/images/gt_1.jpg', 'Mẹ có hồ sơ bảo lãnh Úc theo diện kết hôn vợ chồng 309, con có được đi cùng hồ sơ?', 'Mẹ có hồ sơ bảo lãnh Úc theo diện kết hôn vợ chồng 309, con có được đi cùng hồ sơ?', 'vợ chồng úc', 1, 1, 7, 1, '2018-05-05 01:40:04', '2018-05-07 14:30:28');
+(10, 'Visa vợ chồng Mỹ & khi nào nhận thẻ xanh 2 năm', 'visa-vo-chong-my-khi-nao-nhan-the-xanh-2-nam', '<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Top Ten Định Cư: &nbsp;Visa bảo lãnh vợ chồng Mỹ và thẻ xanh 2 năm thì thời gian kết hôn được tính khi nào? Thời điểm nhận thẻ xanh được tính từ thời điểm nào? bảo lãnh vợ chồng Mỹ khi nào nhận thẻ xanh 10 năm?</span></span></span></span></span></strong></span></span></span>\r\n</p>', '<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Top Ten Định Cư: &nbsp;Visa bảo lãnh vợ chồng Mỹ và thẻ xanh 2 năm thì thời gian kết hôn được tính khi nào? Thời điểm nhận thẻ xanh được tính từ thời điểm nào? bảo lãnh vợ chồng Mỹ khi nào nhận thẻ xanh 10 năm?</span></span></span></span></span></strong></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\"><img alt=\"\" src=\"http://localhost:8080/dinhcu56/images/uploads/images/tintuc/6.png\" style=\"width: 100%; height: 100%;\"></span></span></span></span></span></strong></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Đối với các diện visa vợ chồng Mỹ, thẻ xanh được cấp căn cứ dựa trên tổng thời gian kết hôn của hai vợ chồng</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Nếu người bảo lãnh và đương đơn vợ chồng Mỹ kết hôn dưới 2 năm, thì được cấp thẻ xanh 2 năm</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Và nếu người bảo lãnh và đương đơn vợ chồng Mỹ kết hôn trên 2 năm thì khi đương đơn vợ chồng của công dân Mỹ hoặc thường trú nhân đến Mỹ sẽ được cấp thẻ xanh 10 năm</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Thời gian kết hôn tính từ khi công dân Mỹ hoặc thường trú nhân và đương đơn vợ chồng ở Việt Nam chính thức đăng ký kết hôn ( trường hợp nếu cả hai không đăng ký kết hôn, mà chỉ đám cưới hoặc đám hỏi, thì không được tính là ngày kết hôn chính thức theo quy định của luật pháp. Cả hai phải mở visa hôn phu hôn thê đi Mỹ).</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Và thời điểm để Chính phủ Mỹ cấp thẻ xanh 2 năm căn cứ vào thời gian tính từ thời điểm cả hai kết hôn hợp thức hóa cho đến thời điểm đương đơn vợ chồng của người bảo lãnh đến phi trường (hoặc cửa khẩu biên giới đương bộ) làm thủ tục nhập cảnh Mỹ</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Một số quý vị ngộ nhận rằng thẻ xanh được cấp vào thời điểm phỏng vấn, điều này hoàn toàn không chính xác.</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-top:0in; margin-right:0in; margin-bottom:19.2pt; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Liên hệ Top Ten Định Cư Mỹ để được hỗ trợ&nbsp;dịch vụ hồ sơ visa bảo lãnh thân nhân định cư Mỹ&nbsp;: Công dân Hoa Kỳ bảo lãnh anh chị em, Con là công dân Mỹ bảo lãnh cha mẹ ở Việt Nam (ngược lại), visa vợ chồng Mỹ, visa hôn phu thê Mỹ, thương trú nhân bảo lãnh vợ chồng và con độc thân:</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><b><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">Top Ten Immigration</span></span></span></b></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">02 Giải Phóng, Phường 4, Tân Bình, Hồ Chí Minh</span></span></span></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Website:&nbsp;</span></span></span><a href=\"http://www.tuvandinhcu.com.vn\" style=\"color:blue; text-decoration:underline\"><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\">www.tuvandinhcu.com.vn</span></span></a></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#444340\">Facebook:&nbsp;</span></span></span><a href=\"https://www.facebook.com/chuyenbaolanhmy/\" style=\"color:blue; text-decoration:underline\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\">https://www.fb.com/chuyenbaolanhmy/</span></span></a></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in; margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"vertical-align:baseline\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><b><span style=\"border:none windowtext 1.0pt; font-size:13.5pt; padding:0in\"><span inherit=\"\" style=\"font-family:\"><span style=\"color:#444340\">Hotline: Mr. Thuận 0901 226 286 &ndash; Ms. Hân&nbsp;0901 330 014 &ndash; Ms Thảo 0949 705 599</span></span></span></b></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in 0in 8pt\">\r\n	&nbsp;\r\n</p>', 'images/uploads/images/gt_1.jpg', 'Visa vợ chồng Mỹ & khi nào nhận thẻ xanh 2 năm', 'Visa vợ chồng Mỹ & khi nào nhận thẻ xanh 2 năm', 'vợ chồng mỹ', 1, 1, 2, 1, '2018-05-05 01:36:17', '2018-05-08 04:02:19'),
+(11, 'Mẹ có hồ sơ bảo lãnh Úc theo diện kết hôn vợ chồng 309, con có được đi cùng hồ sơ?', 'me-co-ho-so-bao-lanh-ec-theo-dien-ket-hon-vo-chong-309-con-co-duoc-di-cung-ho-so', '<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"font-size:13.5pt\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Top Ten Định cư Úc &ndash; Chuyên visa vợ chồng Úc: Mẹ có hồ sơ bảo lãnh Úc theo diện kết hôn vợ chồng Úc, hồ sơ 309, trường hợp người mẹ trước đó có con riêng ở Việt Nam vậy con có được đi theo hồ sơ bảo lãnh kết hôn của mẹ hay không? Nếu được thì con đang đi du học Mỹ thì có cần&nbsp;về Việt Nam làm giấy tờ không, và cần cung cấp bổ sung những giấy tờ gì cùng hồ sơ để con có thể đi cùng?</span></span></span></span></span></strong></span></span></span>\r\n</p>', '<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"font-size:13.5pt\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Top Ten Định cư Úc &ndash; Chuyên visa vợ chồng Úc: Mẹ có hồ sơ bảo lãnh Úc theo diện kết hôn vợ chồng Úc, hồ sơ 309, trường hợp người mẹ trước đó có con riêng ở Việt Nam vậy con có được đi theo hồ sơ bảo lãnh kết hôn của mẹ hay không? Nếu được thì con đang đi du học Mỹ thì có cần&nbsp;về Việt Nam làm giấy tờ không, và cần cung cấp bổ sung những giấy tờ gì cùng hồ sơ để con có thể đi cùng?</span></span></span></span></span></strong></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in 0in 8pt\">\r\n	<span style=\"font-size:13pt\"><span style=\"line-height:107%\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"font-size:13.5pt\"><span style=\"background:white\"><span style=\"line-height:107%\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\"><img alt=\"\" src=\"http://localhost:8080/dinhcu56/images/uploads/images/tintuc/7.png\" style=\"width: 100%; height: 100%;\"></span></span></span></span></span></strong></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin:0in 0in 8pt\">\r\n	&nbsp;\r\n</p>\r\n\r\n<p style=\"margin-bottom:.25in; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Trong trường hợp người mẹ ở Việt Nam kết hôn với người có PR thẻ xanh hoặc công dân Úc và được bảo lãnh sang Úc theo diện kết hôn vợ chồng thì được quyền&nbsp;bảo lãnh con sang Úc nếu người con đó đáp ứng được các điều kiện như sau:</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.25in; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">1. Nếu con dưới 18 tuổi thì cần có giấy xác nhận đồng ý cho con đi định cư Úc cùng mẹ của cha ruột của người con đó.</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.25in; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">2. Nếu con trên 18 tuổi thì phải chứng minh được rằng người con đó vẫn đang phụ thuộc vào mẹ về tài chính.</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.25in; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Những giấy tờ cần thiết của người con nộp cùng hồ sơ để người con có thể đi cùng với mẹ đối với hồ sơ bảo lãnh kết hôn vợ chồng Úc gồm: các giấy tờ cá nhân của người con xin đi cùng hồ sơ bảo lãnh kết hôn vợ chồng của mẹ, các bằng chứng chứng minh chứng minh người con vẫn đang phụ thuộc vào mẹ về tài chính, ví dụ: các hóa đơn và biên nhận người mẹ gửi tiền cho con, COE khóa học và các&nbsp;forms phải điền.</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.25in; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Trong trường hợp người con phụ thuộc xin đi cùng hồ sơ bảo lãnh vợ chồng đi Úc của người mẹ đang không có cư trú ở Việt Nam mà ví dụ đang học tại Mỹ thì người con phụ thuộc đó có thể trực tiếp đi từ Mỹ đến Úc mà không cần phải về Việt Nam&nbsp; khi hồ sơ bảo lãnh được chấp thuận</span></span></span></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Chúng tôi sẽ giúp bạn hệ thống sắp xếp hồ sơ visa Úc và các bằng chứng thuyết phục viên chức Lãnh sự Úc cũng như hệ thống trọn bộ&nbsp;</span></span></span></em><strong><i><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">câu hỏi huấn luyện phỏng vấn định cư Úc</span></span></span></i></strong><em><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">.&nbsp;</span></span></span></em><strong><i><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Top Ten Định Cư Úc</span></span></span></i></strong><em><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">&nbsp;là dịch vụ chuyên&nbsp;</span></span></span></em><strong><i><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">hỗ trợ hồ sơ bảo lãnh visa đồng giới Úc, visa hôn phu hôn thê &ndash; Visa vợ chồng Úc</span></span></span></i></strong><em><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">&nbsp;với nhiều năm kinh nghiệm các hồ sơ khó cũng như xin cứu xét, khiếu nại các trường hợp Lãnh sự nghi ngờ tính chất chân thật trong mối quan hệ giữa người bảo lãnh và đương đơn visa Úc&hellip;v..v&hellip;Để biết thêm thông tin chi tiết về visa bảo lãnh vợ chồng Úc, visa hôn phu hôn thê Úc, bảo lãnh đồng giới Úc và các diện visa Úc khác: visa du lịch Úc kết hợp thăm thân nhân, &nbsp;liên hệ Top Ten Định Cư Úc để được tư vấn miễn phí:</span></span></span></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><b><span style=\"font-size:13.5pt\"><span cambria=\"\" math=\"\" style=\"font-family:\"><span style=\"color:red\">&rArr;</span></span></span></b></em><em><b><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:red\">&nbsp;TOP TEN IMMIGRATION&nbsp;</span></span></span></b></em><em><b><span style=\"font-size:13.5pt\"><span cambria=\"\" math=\"\" style=\"font-family:\"><span style=\"color:red\">&lArr;</span></span></span></b></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">02 Giải Phóng, Phường 4, Tân Bình, Hồ Chí Minh</span></span></span></em></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Website</span></span></span></strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">:&nbsp;</span></span></span><a href=\"http://www.tuvandinhcu.com.vn\" style=\"color:blue; text-decoration:underline\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\">www.tuvandinhcu.com.vn</span></span></a></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">Facebook</span></span></span></strong><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#111111\">:&nbsp;</span></span></span><a href=\"https://www.facebook.com/visavochonguc/\" style=\"color:blue; text-decoration:underline\"><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:#ca2017\">www.fb.com/visavochonguc</span></span></span></a></span></span></span></span>\r\n</p>\r\n\r\n<p style=\"margin-bottom:.0001pt; margin-right:0in; margin-left:0in\">\r\n	<span style=\"font-size:12pt\"><span style=\"background:white\"><span style=\"line-height:22.75pt\"><span new=\"\" roman=\"\" style=\"font-family:\" times=\"\"><em><b><span style=\"font-size:13.5pt\"><span arial=\"\" style=\"font-family:\"><span style=\"color:red\">Hotline: Mr. Thuận 0901 226 286 &ndash; Ms Thảo: 0949 705 599 &ndash;&nbsp; Ms. Hân&nbsp;090 133 0014</span></span></span></b></em></span></span></span></span>\r\n</p>', 'images/uploads/images/gt_1.jpg', 'Mẹ có hồ sơ bảo lãnh Úc theo diện kết hôn vợ chồng 309, con có được đi cùng hồ sơ?', 'Mẹ có hồ sơ bảo lãnh Úc theo diện kết hôn vợ chồng 309, con có được đi cùng hồ sơ?', 'vợ chồng úc', 1, 1, 7, 1, '2018-05-05 01:40:04', '2018-05-08 04:02:06');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products`
+-- Cấu trúc bảng cho bảng `products`
 --
 
 CREATE TABLE `products` (
@@ -330,7 +330,7 @@ CREATE TABLE `products` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `roles`
+-- Cấu trúc bảng cho bảng `roles`
 --
 
 CREATE TABLE `roles` (
@@ -343,7 +343,7 @@ CREATE TABLE `roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `roles`
+-- Đang đổ dữ liệu cho bảng `roles`
 --
 
 INSERT INTO `roles` (`id`, `name`, `display_name`, `description`, `created_at`, `updated_at`) VALUES
@@ -352,7 +352,7 @@ INSERT INTO `roles` (`id`, `name`, `display_name`, `description`, `created_at`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `role_user`
+-- Cấu trúc bảng cho bảng `role_user`
 --
 
 CREATE TABLE `role_user` (
@@ -361,7 +361,7 @@ CREATE TABLE `role_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `role_user`
+-- Đang đổ dữ liệu cho bảng `role_user`
 --
 
 INSERT INTO `role_user` (`user_id`, `role_id`) VALUES
@@ -370,7 +370,7 @@ INSERT INTO `role_user` (`user_id`, `role_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Cấu trúc bảng cho bảng `users`
 --
 
 CREATE TABLE `users` (
@@ -384,56 +384,56 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Đang đổ dữ liệu cho bảng `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'nnduyquang', 'nnduyquang@gmail.com', '$2y$10$mStg572JFNI89/0Cg7TOGOUkACFaBl/nsNeOvx8zglr1qyJPA0tj6', NULL, '2018-03-14 07:24:10', NULL);
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `category_items`
+-- Chỉ mục cho bảng `category_items`
 --
 ALTER TABLE `category_items`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `category_permissions`
+-- Chỉ mục cho bảng `category_permissions`
 --
 ALTER TABLE `category_permissions`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `category_permissions_name_unique` (`name`);
 
 --
--- Indexes for table `configs`
+-- Chỉ mục cho bảng `configs`
 --
 ALTER TABLE `configs`
   ADD PRIMARY KEY (`id`),
   ADD KEY `configs_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `menus`
+-- Chỉ mục cho bảng `menus`
 --
 ALTER TABLE `menus`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `migrations`
+-- Chỉ mục cho bảng `migrations`
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `password_resets`
+-- Chỉ mục cho bảng `password_resets`
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
--- Indexes for table `permissions`
+-- Chỉ mục cho bảng `permissions`
 --
 ALTER TABLE `permissions`
   ADD PRIMARY KEY (`id`),
@@ -441,21 +441,21 @@ ALTER TABLE `permissions`
   ADD KEY `permissions_category_permission_id_foreign` (`category_permission_id`);
 
 --
--- Indexes for table `permission_role`
+-- Chỉ mục cho bảng `permission_role`
 --
 ALTER TABLE `permission_role`
   ADD PRIMARY KEY (`permission_id`,`role_id`),
   ADD KEY `permission_role_role_id_foreign` (`role_id`);
 
 --
--- Indexes for table `posts`
+-- Chỉ mục cho bảng `posts`
 --
 ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`),
   ADD KEY `posts_user_id_foreign` (`user_id`);
 
 --
--- Indexes for table `products`
+-- Chỉ mục cho bảng `products`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`id`),
@@ -463,128 +463,128 @@ ALTER TABLE `products`
   ADD KEY `products_category_product_id_foreign` (`category_product_id`);
 
 --
--- Indexes for table `roles`
+-- Chỉ mục cho bảng `roles`
 --
 ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `roles_name_unique` (`name`);
 
 --
--- Indexes for table `role_user`
+-- Chỉ mục cho bảng `role_user`
 --
 ALTER TABLE `role_user`
   ADD PRIMARY KEY (`user_id`,`role_id`),
   ADD KEY `role_user_role_id_foreign` (`role_id`);
 
 --
--- Indexes for table `users`
+-- Chỉ mục cho bảng `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `category_items`
+-- AUTO_INCREMENT cho bảng `category_items`
 --
 ALTER TABLE `category_items`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT for table `category_permissions`
+-- AUTO_INCREMENT cho bảng `category_permissions`
 --
 ALTER TABLE `category_permissions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `configs`
+-- AUTO_INCREMENT cho bảng `configs`
 --
 ALTER TABLE `configs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `menus`
+-- AUTO_INCREMENT cho bảng `menus`
 --
 ALTER TABLE `menus`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `migrations`
+-- AUTO_INCREMENT cho bảng `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `permissions`
+-- AUTO_INCREMENT cho bảng `permissions`
 --
 ALTER TABLE `permissions`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT for table `posts`
+-- AUTO_INCREMENT cho bảng `posts`
 --
 ALTER TABLE `posts`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `products`
+-- AUTO_INCREMENT cho bảng `products`
 --
 ALTER TABLE `products`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `roles`
+-- AUTO_INCREMENT cho bảng `roles`
 --
 ALTER TABLE `roles`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `configs`
+-- Các ràng buộc cho bảng `configs`
 --
 ALTER TABLE `configs`
   ADD CONSTRAINT `configs_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `permissions`
+-- Các ràng buộc cho bảng `permissions`
 --
 ALTER TABLE `permissions`
   ADD CONSTRAINT `permissions_category_permission_id_foreign` FOREIGN KEY (`category_permission_id`) REFERENCES `category_permissions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `permission_role`
+-- Các ràng buộc cho bảng `permission_role`
 --
 ALTER TABLE `permission_role`
   ADD CONSTRAINT `permission_role_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `permission_role_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `posts`
+-- Các ràng buộc cho bảng `posts`
 --
 ALTER TABLE `posts`
   ADD CONSTRAINT `posts_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `products`
+-- Các ràng buộc cho bảng `products`
 --
 ALTER TABLE `products`
   ADD CONSTRAINT `products_category_product_id_foreign` FOREIGN KEY (`category_product_id`) REFERENCES `category_items` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `products_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `role_user`
+-- Các ràng buộc cho bảng `role_user`
 --
 ALTER TABLE `role_user`
   ADD CONSTRAINT `role_user_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,

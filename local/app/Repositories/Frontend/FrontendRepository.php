@@ -224,5 +224,16 @@ class FrontendRepository implements FrontendRepositoryInterface
         return $data;
     }
 
+    public function getCategoryMobileByPath($path)
+    {
+        $data=[];
+        $listCategory=CategoryItem::where('parent_id',function($query)use ($path){
+            $query->select('id')->from(with(new CategoryItem)->getTable())->where('path',$path);
+        })->get();
+        $data['listCategory']=$listCategory;
+        $data['path']=$path;
+        return $data;
+    }
+
 
 }
