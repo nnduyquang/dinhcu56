@@ -5,7 +5,7 @@
             @foreach($data['listCategory'] as $key=>$item)
                 <div class="col-md-3 card">
                     <div class="one-service card-body">
-                        <div class="col-md-12 text-center">
+                        <div class="col-md-12 text-center p-0">
                             {{ Html::image($item->image,'',array('class'=>'img-service')) }}
                         </div>
                         {{--<img class="card-img-top" src="..." alt="Card image cap">--}}

@@ -4,12 +4,14 @@
   padding: 5px;
   .one-service {
     background-color: #eee;
-    padding: 52px 10px 40px;
+    padding: 0px 0px 40px;
+    line-height: 1.3;
+    text-align: center;
     img.img-service {
       margin-left: auto;
       margin-right: auto;
-      width: 100px;
-      height: 62px;
+      width: 100%;
+      height: 150px;
     }
     .card-body {
       .card-title {

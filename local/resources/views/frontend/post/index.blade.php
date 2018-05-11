@@ -36,4 +36,6 @@
 @section('container')
     {{--@include('frontend.home.h_introduce')--}}
     @include('frontend.post.po_info')
+    @include('frontend.home.h_contact')
+    <br>
 @stop

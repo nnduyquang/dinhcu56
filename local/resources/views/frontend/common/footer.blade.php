@@ -13,7 +13,7 @@
                         Lầu 1 & 2, tòa nhà TOP TEN BUILDING</h4>
                     <ul>
                         <li><i class="far fa-building"></i>02 Giải phóng, P. 04, Tân Bình, TP. HCM</li>
-                        <li><i class="fas fa-phone"></i>Office phone: (028) 62907799</li>
+                        <li>{{ Html::image('images/phone-icon.png','',array('style'=>'width:16px;margin-right:8px'))}}Office phone: (028) 62907799</li>
                         <li><i class="fas fa-phone"></i>Hotline: 0901.226.286</li>
                         <li><i class="far fa-envelope"></i>info@toptenimmigration.com.vn</li>
                     </ul>
@@ -36,7 +36,7 @@
                     <span>Copyright © 2018 Top Ten Immigration. Powered by Top Ten</span>
                 </div>
                 <div class="col-md-4 bottom-right">
-                    <span>Designed By <a href="#">smartlinks.vn</a></span>
+                    <span>Designed By <a href="http://smartlinks.vn/">smartlinks.vn</a></span>
                 </div>
             </div>
         </div>

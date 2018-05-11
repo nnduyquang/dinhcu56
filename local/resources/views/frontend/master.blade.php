@@ -9,6 +9,7 @@
     <meta name="keywords" content="@yield('keyword')">
     <meta name="description" content="@yield('description')">
     <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="{{URL::to('images/logo/logo_main.ico')}}">
     {{ Html::style('css/core.common.css') }}
     {{ Html::style('css/core.frontend.css') }}
     {{ Html::style('css/frontend.css') }}
@@ -43,7 +44,7 @@
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
         <a href="tel:0962599482" class="phone_animation_circle_fill_img"><i class="fas fa-phone"
-                                                                            aria-hidden="true"></i></a>
+                                                                            aria-hidden="true" style="transform: rotate(100deg);"></i></a>
     </div>
 </div>
 <div class="callback d-none d-md-block" style="right: 150px;bottom: -30px;left:inherit">
@@ -51,7 +52,7 @@
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
         <a href="tel:0962599482" class="phone_animation_circle_fill_img"><i class="fas fa-phone"
-                                                                            aria-hidden="true"></i></a>
+                                                                            aria-hidden="true" style="transform: rotate(100deg);"></i></a>
     </div>
 </div>
 <div class="mess_desk_bot d-none d-md-block" style="position: fixed;bottom:40px;right: 0px;">
