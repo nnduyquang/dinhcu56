@@ -47,21 +47,33 @@
                                                                             aria-hidden="true" style="transform: rotate(100deg);"></i></a>
     </div>
 </div>
-<div class="callback d-none d-md-block" style="right: 150px;bottom: -30px;left:inherit">
-    <div class="phone_animation">
-        <div class="phone_animation_circle"></div>
-        <div class="phone_animation_circle_fill"></div>
-        <a href="tel:0962599482" class="phone_animation_circle_fill_img"><i class="fas fa-phone"
-                                                                            aria-hidden="true" style="transform: rotate(100deg);"></i></a>
-    </div>
-</div>
-<div class="mess_desk_bot d-none d-md-block" style="position: fixed;bottom:40px;right: 0px;">
-    <a href="tel:0962599482"
-       style="display: block;width: 260px;height: 56px;background: url({{URL::to('images/nenhot.png')}}) no-repeat;text-align: center;padding-top: 10px;color:#fff;font-size: 20px;font-family: 'roboto-bold'">
-    </a>
-</div>
+{{--<div class="callback d-none d-md-block" style="right: 150px;bottom: -30px;left:inherit">--}}
+    {{--<div class="phone_animation">--}}
+        {{--<div class="phone_animation_circle"></div>--}}
+        {{--<div class="phone_animation_circle_fill"></div>--}}
+        {{--<a href="tel:0962599482" class="phone_animation_circle_fill_img"><i class="fas fa-phone"--}}
+                                                                            {{--aria-hidden="true" style="transform: rotate(100deg);"></i></a>--}}
+    {{--</div>--}}
+{{--</div>--}}
+{{--<div class="mess_desk_bot d-none d-md-block" style="position: fixed;bottom:40px;right: 0px;">--}}
+    {{--<a href="tel:0962599482"--}}
+       {{--style="display: block;width: 260px;height: 56px;background: url({{URL::to('images/nenhot.png')}}) no-repeat;text-align: center;padding-top: 10px;color:#fff;font-size: 20px;font-family: 'roboto-bold'">--}}
+    {{--</a>--}}
+{{--</div>--}}
 
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5af934b9227d3d7edc2540a9/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 
 </Html>

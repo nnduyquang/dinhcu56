@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-7 justify-content-left align-self-center text-left">
-                        <span> Hotline: 0901.226.286</span>
+                        <span  style="font-weight:  bolder;"> Hotline: 0901.226.286</span>
                     </div>
                 </div>
             </div>

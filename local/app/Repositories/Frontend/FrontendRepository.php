@@ -116,15 +116,20 @@ class FrontendRepository implements FrontendRepositoryInterface
             $query->select('id')->from(with(new CategoryItem)->getTable())->where('path', $pathSub)->where('parent_id', function ($query2) use ($pathMain) {
                 $query2->select('id')->from(with(new CategoryItem)->getTable())->where('path', $pathMain);
             });
-        })->where('isActive',1)->get();
+        })->where('isActive', 1)->get();
         if (count($post) == 1) {
             $data['post'] = $post;
+
+
         } elseif (count($post) == 0) {
+
             $data['mainCategory'] = CategoryItem::where('path', $pathSub)->first();
             $data['post'] = $post;
+
         } else {
             $data['mainCategory'] = CategoryItem::where('path', $pathMain)->get();
             $data['post'] = $post;
+
         }
         return $data;
     }
@@ -161,6 +166,8 @@ class FrontendRepository implements FrontendRepositoryInterface
 //        $categoryPost->posts = $posts;
         $data['post'] = $post;
 //        $data['type'] = 1;
+        $orderPost =  Post::where('category_item_id', $post[0]->category_item_id)->whereNotIn('id',[$post[0]->id])->orderBy('id','DESC')->take(6)->get();
+        $data['orderPost']=$orderPost;
         return $data;
     }
 
@@ -203,7 +210,7 @@ class FrontendRepository implements FrontendRepositoryInterface
     {
         $data = [];
         $mainCategory = CategoryItem::where('level', MENU_GOC)->where('path', $path)->get();
-        $post = Post::where('category_item_id', $mainCategory[0]->id)->get();
+        $post = Post::where('category_item_id', $mainCategory[0]->id)->orderBy('id','DESC')->get();
         $data['mainCategory'] = $mainCategory;
         $data['post'] = $post;
         return $data;
@@ -211,27 +218,27 @@ class FrontendRepository implements FrontendRepositoryInterface
 
     public function getFrontendHomepage()
     {
-        $data=[];
-        $listNews=Post::where('category_item_id',function($query){
-            $query->select('id')->from(with(new CategoryItem)->getTable())->where('path','tin-tuc');
-        })->take(3)->get();
-        foreach ($listNews as $key=>$item){
-            $item->description=loai_bo_html_tag($item->description);
+        $data = [];
+        $listNews = Post::where('category_item_id', function ($query) {
+            $query->select('id')->from(with(new CategoryItem)->getTable())->where('path', 'tin-tuc');
+        })->take(3)->orderBy('id','DESC')->get();
+        foreach ($listNews as $key => $item) {
+            $item->description = loai_bo_html_tag($item->description);
         }
-        $listCategory=CategoryItem::where('level', MENU_GOC)->take(4)->get();
-        $data['listNews']=$listNews;
-        $data['listCategory']=$listCategory;
+        $listCategory = CategoryItem::where('level', MENU_GOC)->take(4)->get();
+        $data['listNews'] = $listNews;
+        $data['listCategory'] = $listCategory;
         return $data;
     }
 
     public function getCategoryMobileByPath($path)
     {
-        $data=[];
-        $listCategory=CategoryItem::where('parent_id',function($query)use ($path){
-            $query->select('id')->from(with(new CategoryItem)->getTable())->where('path',$path);
+        $data = [];
+        $listCategory = CategoryItem::where('parent_id', function ($query) use ($path) {
+            $query->select('id')->from(with(new CategoryItem)->getTable())->where('path', $path);
         })->get();
-        $data['listCategory']=$listCategory;
-        $data['path']=$path;
+        $data['listCategory'] = $listCategory;
+        $data['path'] = $path;
         return $data;
     }
 
