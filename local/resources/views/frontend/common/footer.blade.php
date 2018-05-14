@@ -9,8 +9,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h4 class="title">T.T.I - Immigration- Phòng Visa Định cư & Du học
-                        Lầu 1 & 2, tòa nhà TOP TEN BUILDING</h4>
+                    <h4 class="title">TOP TEN IMMIGRATION ĐỊNH CƯ VÀ ĐẦU TƯ</h4>
                     <ul>
                         <li><i class="far fa-building"></i>02 Giải phóng, P. 04, Tân Bình, TP. HCM</li>
                         <li>{{ Html::image('images/phone-icon.png','',array('style'=>'width:16px;margin-right:8px'))}}Office phone: (028) 62907799</li>

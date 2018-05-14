@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-7 justify-content-left align-self-center text-left">
-                        <span> Hotline: 0901 83 85 86 | (028) 54.39.8888 | (024) 38.25.1111</span>
+                        <span> Hotline: 0901.226.286</span>
                     </div>
                 </div>
             </div>
