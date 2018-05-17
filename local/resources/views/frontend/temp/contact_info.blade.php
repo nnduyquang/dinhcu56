@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="contact_top">
-                    <h3 class="title">Gửi Liên Hệ</h3>
+                    <h3 class="title">Gửi liên hệ</h3>
                     <hr>
                     <p>
                         Nếu bạn có thắc mắc gì, có thể gửi yêu cầu cho chúng tôi, và chúng tôi sẽ liên lạc lại với bạn
@@ -44,14 +44,14 @@
             </div>
             <div class="col-md-4">
                 <div class="contact_top">
-                    <h3 class="title">Địa Chỉ Liên Hệ</h3>
+                    <h3 class="title">Địa chỉ liên hệ</h3>
                     <hr>
-                    <h4 class="title">TOP TEN IMMIGRATION ĐỊNH CƯ VÀ ĐẦU TƯ</h4>
+                    <h4 class="title">BẤT ĐỘNG SẢN SAIGONREAL365 </h4>
                     <ul>
-                        <li><i class="far fa-building"></i>02 Giải phóng, P. 04, Tân Bình, TP. HCM</li>
-                        <li><img src="../images/phone-icon-black.png" style="width:16px;margin-right:8px" alt="">Office phone: (028) 62907799</li>
-                        <li><i class="fas fa-phone"></i>Điện Thoại: 0901.330.014 - 0931.330.060 - 0901.226.286</li>
-                        <li><i class="far fa-envelope"></i>info@toptenimmigration.com.vn</li>
+                        <li><i class="far fa-building"></i>Địa Chỉ:</li>
+                        <li><img src="../images/phone-icon-black.png" style="width:16px;margin-right:8px" alt="">Office phone: 0909.345.117</li>
+                        <li><i class="fas fa-phone"></i>Điện Thoại: 0909.345.117</li>
+                        <li><i class="far fa-envelope"></i>benguyen1712gmail.com</li>
                     </ul>
                 </div>
             </div>

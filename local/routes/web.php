@@ -90,7 +90,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('sml_admin/config/', ['as' => 'config.general.index', 'uses' => 'ConfigGeneralController@getConfig']);
     Route::post('sml_admin/config/', ['as' => 'config.general.store', 'uses' => 'ConfigGeneralController@saveConfig']);
     //-------EMAIL
-//    Route::get('sml_admin/cau-hinh/mail', ['as' => 'config.email.index', 'uses' => 'ConfigEmailController@getAllCauHinh']);
+
     Route::get('sml_admin/config/email', ['as' => 'config.email.index', 'uses' => 'ConfigEmailController@getEmailConfig']);
     Route::post('sml_admin/config/email', ['as' => 'config.email.store', 'uses' => 'ConfigEmailController@saveEmailConfig']);
 

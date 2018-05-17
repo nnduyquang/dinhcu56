@@ -43,7 +43,7 @@
     <div class="phone_animation">
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
-        <a href="tel:0962599482" class="phone_animation_circle_fill_img"><i class="fas fa-phone"
+        <a href="tel:0901330014" class="phone_animation_circle_fill_img"><i class="fas fa-phone"
                                                                             aria-hidden="true" style="transform: rotate(100deg);"></i></a>
     </div>
 </div>
