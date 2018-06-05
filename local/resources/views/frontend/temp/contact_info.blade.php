@@ -18,6 +18,13 @@
                             Please choose a username.
                         </div>
                     </div>
+                    <div class="ip-phone input-group">
+                        <input class="form-control input-text" placeholder="Số Điện Thoại" name="phone" type="text"
+                               value="">
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                    </div>
                     <div class="ip-email input-group">
                         <input class="form-control input-text" placeholder="Email" name="email" type="text" value="">
                         <div class="invalid-feedback">
@@ -46,12 +53,23 @@
                 <div class="contact_top">
                     <h3 class="title">Địa chỉ liên hệ</h3>
                     <hr>
-                    <h4 class="title">BẤT ĐỘNG SẢN SAIGONREAL365 </h4>
+                    <h4 class="title">
+                        TOP TEN IMMIGRATION ĐỊNH CƯ VÀ ĐẦU TƯ
+                    </h4>
+
                     <ul>
-                        <li><i class="far fa-building"></i>Địa Chỉ:</li>
-                        <li><img src="../images/phone-icon-black.png" style="width:16px;margin-right:8px" alt="">Office phone: 0909.345.117</li>
-                        <li><i class="fas fa-phone"></i>Điện Thoại: 0909.345.117</li>
-                        <li><i class="far fa-envelope"></i>benguyen1712gmail.com</li>
+                        <li>
+                            02 Giải phóng, P. 04, Tân Bình, TP. HCM
+                        </li>
+                        <li>
+                            <img alt="" src="../images/phone-icon-black.png" style="width:16px;margin-right:8px">Office phone: (028) 62907799
+                        </li>
+                        <li>
+                            Điện Thoại: 0901.330.014 - 0931.330.060 - 0901.226.286
+                        </li>
+                        <li>
+                            info@toptenimmigration.com.vn
+                        </li>
                     </ul>
                 </div>
             </div>

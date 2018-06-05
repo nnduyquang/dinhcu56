@@ -26,13 +26,13 @@
                                         <ul class="sub_menu">
                                             @foreach($data->categorySub as $key2=>$data2)
                                                 <li>
-                                                    <a href="{{URL::to('danh-muc/'.$data->path.'/'.$data2->path)}}">{{$data2->name}}</a>
+                                                    <a href="{{URL::to('dinh-cu/'.$data->path.'/'.$data2->path)}}">{{$data2->name}}</a>
                                                 </li>
                                             @endforeach
                                         </ul>
                                     </li>
                                 @else
-                                    <li class="li-normal"><a href="{{URL::to('danh-muc/'.$data->path)}}">{{$data->name}}</a></li>
+                                    <li class="li-normal"><a href="{{URL::to('dinh-cu/'.$data->path)}}">{{$data->name}}</a></li>
                                 @endif
                             @endforeach
                             {{--<li class="li-normal"><a href="{{URL::to('/bai-viet/tu-van')}}">TIN TỨC</a></li>--}}

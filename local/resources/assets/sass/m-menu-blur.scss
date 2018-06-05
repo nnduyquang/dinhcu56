@@ -140,3 +140,18 @@ This class is added to the container
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');
   }
 }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .sidebar{
+    ul{
+      padding-top: 0;
+      padding-bottom: 0;
+      li{
+        font-size: 12px;
+        line-height: 0;
+      }
+    }
+    .background-sidebar{
+      height: 100px;
+    }
+  }
+}

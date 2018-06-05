@@ -100,6 +100,7 @@ $(document).ready(function () {
         var data = new FormData($(this).get(0));
         data.append('name', $("input[name='name']").val());
         data.append('email', $("input[name='email']").val());
+        data.append('phone', $("input[name='phone']").val());
         data.append('contentMail', $("textarea[name='contentMail']").val());
         $.ajaxSetup({
             headers: {
@@ -125,6 +126,7 @@ $(document).ready(function () {
                     setTimeout("$('.button-group span').fadeOut(1500);", 3000);
                     $("input[name='name']").val("");
                     $("input[name='email']").val("");
+                    $("input[name='phone']").val("");
                     $("textarea[name='contentMail']").val("");
                 }
                 else {
@@ -137,6 +139,10 @@ $(document).ready(function () {
                     if (errors.hasOwnProperty('name')) {
                         $('.ip-name .input-text').addClass('is-invalid');
                         $('.ip-name .invalid-feedback').html(errors['name']);
+                    }
+                    if (errors.hasOwnProperty('phone')) {
+                        $('.ip-phone .input-text').addClass('is-invalid');
+                        $('.ip-phone .invalid-feedback').html(errors['phone']);
                     }
                     if (errors.hasOwnProperty('contentMail')) {
                         $('.ip-contentMail .input-area').addClass('is-invalid');
