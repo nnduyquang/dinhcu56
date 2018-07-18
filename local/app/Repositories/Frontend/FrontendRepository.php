@@ -112,11 +112,12 @@ class FrontendRepository implements FrontendRepositoryInterface
     public function getPostByCategory($pathMain, $pathSub)
     {
         $data = [];
-        $post = Post::where('category_item_id', function ($query) use ($pathSub, $pathMain) {
-            $query->select('id')->from(with(new CategoryItem)->getTable())->where('path', $pathSub)->where('parent_id', function ($query2) use ($pathMain) {
-                $query2->select('id')->from(with(new CategoryItem)->getTable())->where('path', $pathMain);
-            });
-        })->where('isActive', 1)->get();
+        $post=CategoryItem::where('path',$pathSub)->first()->posts()->where('isActive',ACTIVE)->orderBy('id','DESC')->get();
+//        $post = Post::where('category_item_id', function ($query) use ($pathSub, $pathMain) {
+//            $query->select('id')->from(with(new CategoryItem)->getTable())->where('path', $pathSub)->where('parent_id', function ($query2) use ($pathMain) {
+//                $query2->select('id')->from(with(new CategoryItem)->getTable())->where('path', $pathMain);
+//            });
+//        })->where('isActive', 1)->get();
         if (count($post) == 1) {
             $data['post'] = $post;
 
@@ -219,9 +220,10 @@ class FrontendRepository implements FrontendRepositoryInterface
     public function getFrontendHomepage()
     {
         $data = [];
-        $listNews = Post::where('category_item_id', function ($query) {
-            $query->select('id')->from(with(new CategoryItem)->getTable())->where('path', 'tin-tuc');
-        })->take(3)->orderBy('id','DESC')->get();
+        $listNews=CategoryItem::where('path','tin-tuc')->first()->posts()->where('isActive',ACTIVE)->orderBy('id','DESC')->take(3)->get();
+//        $listNews = Post::where('category_item_id', function ($query) {
+//            $query->select('id')->from(with(new CategoryItem)->getTable())->where('path', 'tin-tuc');
+//        })->take(3)->orderBy('id','DESC')->get();
         foreach ($listNews as $key => $item) {
             $item->description = loai_bo_html_tag($item->description);
         }

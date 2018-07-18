@@ -11,4 +11,7 @@ class CategoryItem extends Model
     ];
     protected $table = 'category_items';
     protected $hidden = ['id'];
+    public function posts(){
+        return $this->belongsToMany('App\Post','category_many','category_id','item_id')->withTimestamps();
+    }
 }
